@@ -2,10 +2,13 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "homepage": "https://github.com/Ariy83/goit-js-hw-09",
   "scripts": {
-    "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "start": "npx parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /goit-js-hw-09/",
+    "prepush": "git add .",
+    "push": "git commit -m 'update'",
+    "postpush": "git push"
   },
   "repository": {
     "type": "git",
