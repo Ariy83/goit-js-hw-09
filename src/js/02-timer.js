@@ -60,11 +60,11 @@ const timer = {
     const currentTime = Date.now();
     const diff = this.deadline - currentTime;
     const time = this.convertMs(diff);
-    renderTime(time);
     if (diff < 0) {
       this.stop();
       return;
     }
+    renderTime(time);
   },
 
   convertMs(ms) {
